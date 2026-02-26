@@ -84,5 +84,5 @@ app.post("/api/chat", async (req, res) => {
 });
 
 app.listen(process.env.PORT || 5000, () =>
-  console.log("Server running on 5000")
+  console.log("Server running")
 );

@@ -48,26 +48,6 @@ Gemini LLM Generation
 Grounded Response
 ```
 
-flowchart TD
-
-A[User - React Chat UI] --> B[POST /api/chat - Express API]
-
-B --> C[Query Embedding\nGemini Embedding Model]
-
-C --> D[Vector Store\nvector_store.json]
-
-D --> E[Cosine Similarity Search]
-
-E --> F[Top-K Retrieved Chunks]
-
-F --> G[Prompt Builder\nContext + History + Question]
-
-G --> H[Gemini LLM Generation]
-
-H --> I[Grounded Response]
-
-I --> A
-
 ### Architecture Layers
 
 * **Frontend Layer:** Chat interface
@@ -341,14 +321,3 @@ These are expected for assignment scope.
 * Multi-domain support
 * Tool calling
 * Retrieval reranking layer
-
----
-
-## 🎥 Demo Walkthrough (Suggested)
-
-1. Ask HR question → correct grounded answer
-2. Ask paraphrased question → semantic retrieval works
-3. Ask unknown question → fallback response
-4. Show new chat
-5. Show typing indicator
-6. Explain RAG pipeline

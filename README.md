@@ -48,26 +48,6 @@ Gemini LLM Generation
 Grounded Response
 ```
 
-flowchart TD
-
-A[User - React Chat UI] --> B[POST /api/chat - Express API]
-
-B --> C[Query Embedding\nGemini Embedding Model]
-
-C --> D[Vector Store\nvector_store.json]
-
-D --> E[Cosine Similarity Search]
-
-E --> F[Top-K Retrieved Chunks]
-
-F --> G[Prompt Builder\nContext + History + Question]
-
-G --> H[Gemini LLM Generation]
-
-H --> I[Grounded Response]
-
-I --> A
-
 ### Architecture Layers
 
 * **Frontend Layer:** Chat interface

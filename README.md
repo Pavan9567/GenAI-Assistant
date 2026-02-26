@@ -321,14 +321,3 @@ These are expected for assignment scope.
 * Multi-domain support
 * Tool calling
 * Retrieval reranking layer
-
----
-
-## 🎥 Demo Walkthrough (Suggested)
-
-1. Ask HR question → correct grounded answer
-2. Ask paraphrased question → semantic retrieval works
-3. Ask unknown question → fallback response
-4. Show new chat
-5. Show typing indicator
-6. Explain RAG pipeline
